@@ -2,7 +2,7 @@
 Anonymous code repository for peer review
 
 
-This repository contains a **implementation** of the **ConRAC** used in our anonymized submission.
+This repository contains a **implementation** of the **ConRAC-SE** used in our anonymized submission.
 
 ## 1) Scope (What is included)
 - Core Python code for:
