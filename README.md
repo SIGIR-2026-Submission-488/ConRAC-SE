@@ -54,7 +54,7 @@ repo/
 This repository follows a **minimal-modification policy** to preserve the original notebook logic while making the code runnable in a standard repo setting.  
 As a result, **all dataset files are referenced by fixed relative paths** under the repo root (i.e., no Google Drive/Colab paths are used in code).
 
-### 1) Download the dataset
+### 1. Download the dataset
 You can download the dataset package from the following Google Drive folder:
 
 ```text
@@ -63,7 +63,7 @@ https://drive.google.com/drive/folders/1wExY6YOtq9qxOq2HBgYhcrz5bdR2WA-t?usp=sha
 
 After downloading, place the dataset/ directory at the same level as src/ (repo root), following the structure below.
 
-### 2) Required dataset folder structure and paths
+### 2. Required dataset folder structure and paths
 The code expects the following paths to exist:
 
 ~~~text
@@ -82,7 +82,7 @@ dataset/
 > Note: Some files (e.g., `.npy` cache) may be created automatically when you run the scripts.  
 > Other files must be present beforehand (e.g., train/test CSV splits and pre-mined triplets).
 
-### 3) How paths are resolved in code
+### 3. How paths are resolved in code
 
 All paths are resolved relative to the repository root, not absolute machine paths and not Drive/Colab paths.
 
