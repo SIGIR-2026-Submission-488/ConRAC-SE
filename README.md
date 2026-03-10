@@ -6,12 +6,14 @@ This repository contains a **implementation** of the **ConRAC-SE** used in our a
 
 ## 1) Scope (What is included)
 - Core Python code for:
-  - loading the training dataset
-  - chunked document embedding (long-document handling)
-  - similarity-based triplet mining
-  - exporting generated triplets to CSV
+  - loading the dataset (with consistent indexing)
+  - long-document chunked embedding
+  - Stage-2 bi-encoder retriever fine-tuning (FT retriever)
+  - cross-encoder reranker fine-tuning (FT reranker)
+  - ConRAC inference (Top-K retrieval → Top-M reranking)
+  - ConRAC-SE Hybrid evaluation (gated selective escalation with Qwen)
 - `requirements.txt`
-- a CLI script for running the triplet-generation pipeline
+- runnable scripts for triplet generation, training, and evaluation
 
 This is an **anonymized review repository** and some paths / environment-specific details are intentionally omitted or generalized.
 
@@ -76,6 +78,9 @@ dataset/
 └── Re-Ranker/
     └── wikileaks_triplets_token_based_final.csv
 ~~~
+
+---
+
 > Note: Some files (e.g., .npy cache) may be created automatically when you run the scripts.
 > Other files must be present beforehand (e.g., train/test CSV splits and pre-mined triplets).
 
