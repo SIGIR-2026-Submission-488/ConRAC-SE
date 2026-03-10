@@ -63,7 +63,6 @@ https://drive.google.com/drive/folders/1wExY6YOtq9qxOq2HBgYhcrz5bdR2WA-t?usp=sha
 After downloading, place the dataset/ directory at the same level as src/ (repo root), following the structure below.
 
 ### 2) Required dataset folder structure and paths
-
 The code expects the following paths to exist:
 
 ~~~text
@@ -78,10 +77,8 @@ dataset/
 └── Re-Ranker/
     └── wikileaks_triplets_token_based_final.csv
 ~~~
-~~~
----
 
-> Note: Some files (e.g., .npy cache) may be created automatically when you run the scripts.
+> Note: Some files (e.g., `.npy` cache) may be created automatically when you run the scripts.  
 > Other files must be present beforehand (e.g., train/test CSV splits and pre-mined triplets).
 
 ### 3) How paths are resolved in code
